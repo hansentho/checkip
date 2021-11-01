@@ -25,14 +25,14 @@ addgroup sftpusers
 ## Add sftpuser
 useradd -s /bin/bash -d /sftp/sftpuser/ -m -G sftpusers sftpuser
 chown sftpuser:sftpusers /sftp/sftpuser/
-echo -e "tusassAdmin_2021\ntusassAdmin_2021" | passwd sftpuser
-
+echo -e "<PASSWORD>\n<PASSWORED>" | passwd <user>
 ## Add tusass
 useradd -s /bin/bash -d /sftp/tusass/ -m -G sftpusers tusass
 chown tusass:sftpusers /sftp/tusass/
-echo -e "tusassAdmin_2021\ntusassAdmin_2021" | passwd tusass
+echo -e "<PASSWORD>\n<PASSWORED>" | passwd <user>
 
 ## Add telavox
 useradd -s /bin/bash -d /sftp/telavox/ -m -G sftpusers telavox
 chown  telavox:sftpusers /sftp/telavox/
-echo -e "TelavoxUser-2021\nTelavoxUser-2021" | passwd telavox
+echo -e "<PASSWORD>\n<PASSWORED>" | passwd <user>
+#test
